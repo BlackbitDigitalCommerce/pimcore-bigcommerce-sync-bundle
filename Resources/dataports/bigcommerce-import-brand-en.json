@@ -1,0 +1,182 @@
+{
+    "plugin_pim_dataport": {
+        "id": 1,
+        "name": "Bigcommerce Import Brand EN",
+        "description": "",
+        "sourcetype": "json",
+        "sourceconfig": "a:8:{s:6:\"fields\";a:9:{s:7:\"field_2\";a:1:{s:9:\"json-path\";s:2:\"id\";}s:7:\"field_3\";a:1:{s:9:\"json-path\";s:4:\"name\";}s:7:\"field_4\";a:1:{s:9:\"json-path\";s:10:\"page_title\";}s:7:\"field_5\";a:1:{s:9:\"json-path\";s:13:\"meta_keywords\";}s:7:\"field_6\";a:1:{s:9:\"json-path\";s:16:\"meta_description\";}s:7:\"field_7\";a:1:{s:9:\"json-path\";s:9:\"image_url\";}s:7:\"field_8\";a:1:{s:9:\"json-path\";s:15:\"search_keywords\";}s:7:\"field_9\";a:1:{s:9:\"json-path\";s:14:\"custom_url.url\";}s:8:\"field_10\";a:1:{s:9:\"json-path\";s:24:\"custom_url.is_customized\";}}s:4:\"file\";s:241:\"curl --request GET \\\n  --url \"https://api.bigcommerce.com/stores/s99w375vxa/v3/catalog/brands\" \\\n  --header 'Accept: application/json' \\\n  --header 'Content-Type: application/json' \\\n  --header 'X-Auth-Token: g6i1uek3ve5q2ztm5x5sasxs9n9ouog'\";s:10:\"autoImport\";b:0;s:17:\"incrementalExport\";b:0;s:11:\"assetSource\";s:1:\"/\";s:13:\"archiveFolder\";s:0:\"\";s:14:\"item-json-path\";s:4:\"data\";s:9:\"hasHeader\";b:0;}",
+        "targetconfig": "a:12:{s:4:\"mode\";s:1:\"3\";s:9:\"itemClass\";s:5:\"brand\";s:10:\"itemFolder\";s:7:\"/Brands\";s:14:\"masterDocument\";s:0:\"\";s:19:\"optimizeInheritance\";s:1:\"0\";s:14:\"skipVersioning\";b:0;s:16:\"javascriptEngine\";s:3:\"php\";s:11:\"assetFolder\";s:7:\"/Brands\";s:8:\"idPrefix\";s:0:\"\";s:13:\"categoryClass\";s:0:\"\";s:17:\"fieldnameProducts\";s:0:\"\";s:17:\"compatibilityMode\";s:1:\"0\";}"
+    },
+    "plugin_pim_fieldmapping": [
+        {
+            "dataportId": 1,
+            "fieldName": "bigcommerce_id",
+            "locale": "en",
+            "fieldNo": 2,
+            "keyMapping": 1,
+            "format": "a:8:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "custom_url",
+            "locale": "en",
+            "fieldNo": 9,
+            "keyMapping": 0,
+            "format": "a:3:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "image_url",
+            "locale": "en",
+            "fieldNo": 7,
+            "keyMapping": 0,
+            "format": "a:3:{s:9:\"overwrite\";b:1;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "is_customized",
+            "locale": "en",
+            "fieldNo": 10,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "key",
+            "locale": "",
+            "fieldNo": 3,
+            "keyMapping": 0,
+            "format": "a:3:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "meta_description",
+            "locale": "en",
+            "fieldNo": 6,
+            "keyMapping": 0,
+            "format": "a:3:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "meta_keywords",
+            "locale": "en",
+            "fieldNo": 5,
+            "keyMapping": 0,
+            "format": "a:7:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "return implode(',', $params['value']);",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "name",
+            "locale": "en",
+            "fieldNo": 3,
+            "keyMapping": 0,
+            "format": "a:7:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "page_title",
+            "locale": "en",
+            "fieldNo": 4,
+            "keyMapping": 0,
+            "format": "a:3:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 1,
+            "fieldName": "search_keywords",
+            "locale": "en",
+            "fieldNo": 8,
+            "keyMapping": 0,
+            "format": "a:3:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        }
+    ],
+    "plugin_pim_rawitemField": [
+        {
+            "dataportId": 1,
+            "fieldNo": 2,
+            "name": "bigcommerce_id",
+            "priority": 0
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 3,
+            "name": "name",
+            "priority": 1
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 4,
+            "name": "page_title",
+            "priority": 2
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 5,
+            "name": "meta_keywords",
+            "priority": 3
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 6,
+            "name": "meta_description",
+            "priority": 4
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 7,
+            "name": "image_url",
+            "priority": 5
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 8,
+            "name": "search_keywords",
+            "priority": 6
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 9,
+            "name": "url",
+            "priority": 7
+        },
+        {
+            "dataportId": 1,
+            "fieldNo": 10,
+            "name": "is_customized",
+            "priority": 8
+        }
+    ],
+    "user": {
+        "id": 2,
+        "username": "admin"
+    }
+}
