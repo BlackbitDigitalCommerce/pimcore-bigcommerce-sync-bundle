@@ -40,71 +40,69 @@ class Installer extends AbstractInstaller
 
     public function install(): bool
     {
-//        PimcoreService::deleteWebsiteSetting();
-        PimcoreService::createWebsiteSetting();
-//        if (!$this->canBeinstalled()) {
-//            throw new InstallationException(sprintf('Bundle "%s" can\'t be installed', $this->bundle->getName()));
-//        }
-//
+        if (!$this->canBeinstalled()) {
+            throw new InstallationException(sprintf('Bundle "%s" can\'t be installed', $this->bundle->getName()));
+        }
+
         $result = true;
-//
-//        $definitionFiles = $this->getDefinitionFiles();
-//
-//        if (!count($definitionFiles)) {
-//            throw new InstallationException(sprintf('Bundle "%s" hasn\'t class definition templates', $this->bundle->getName()));
-//        }
-//
-//        try {
-//            foreach ($definitionFiles as $definitionFile) {
-//                $definitionString = file_get_contents($this->defenitionFullPath.$definitionFile['file']);
-//
-//                if (!$definitionString) {
-//                    throw new InstallationException(sprintf('Failed to install. "%s" definition file is invalid', $definitionFile));
-//                }
-//
-//                $definitionArray = json_decode($definitionString, true);
-//
-//                unset($definitionString);
-//
-//                if (!is_array($definitionArray)) {
-//                    throw new InstallationException(sprintf('Failed to install. "%s" definition file has invalid stucture', $definitionFile));
-//                }
-//
-//                if (
-//                    empty($definitionArray['id']) ||
-//                    ClassDefinition::getById($definitionArray['id']) !== null ||
-//                    ClassDefinition::getByName($definitionFile['className']) !== null
-//                ) {
-//                    throw new InstallationException(
-//                        sprintf(
-//                            'Failed to install. The system already has a DataObject with "%s" name and ID "%s"',
-//                            ucfirst($definitionArray['id']),
-//                            $definitionArray['id']
-//                        )
-//                    );
-//                }
-//            }
-//
-//            $notCreated = [];
-//            foreach ($definitionFiles as $item) {
-//                if (!$this->createCless($item)['status']) {
-//                    $notCreated[] = $this->createCless($item);
-//                }
-//            }
-//
-//            if (count($notCreated)) {
-//                throw new InstallationException(
-//                    sprintf(
-//                        count($notCreated) > 1 ? 'Failed to create "%s" classes' : 'Failed to create "%s" class',
-//                        implode(', ', array_column($notCreated, 'className'))
-//                    )
-//                );
-//            }
-//
-//            PimcoreService::createWebsiteSetting();
-//        } catch (\Exception $e) {
-//            throw new InstallationException("Failed to install: ".$e);
-//        }
+
+        $definitionFiles = $this->getDefinitionFiles();
+
+        if (!count($definitionFiles)) {
+            throw new InstallationException(sprintf('Bundle "%s" hasn\'t class definition templates', $this->bundle->getName()));
+        }
+
+        try {
+            foreach ($definitionFiles as $definitionFile) {
+                $definitionString = file_get_contents($this->defenitionFullPath.$definitionFile['file']);
+
+                if (!$definitionString) {
+                    throw new InstallationException(sprintf('Failed to install. "%s" definition file is invalid', $definitionFile));
+                }
+
+                $definitionArray = json_decode($definitionString, true);
+
+                unset($definitionString);
+
+                if (!is_array($definitionArray)) {
+                    throw new InstallationException(sprintf('Failed to install. "%s" definition file has invalid stucture', $definitionFile));
+                }
+
+                if (
+                    empty($definitionArray['id']) ||
+                    ClassDefinition::getById($definitionArray['id']) !== null ||
+                    ClassDefinition::getByName($definitionFile['className']) !== null
+                ) {
+                    throw new InstallationException(
+                        sprintf(
+                            'Failed to install. The system already has a DataObject with "%s" name and ID "%s"',
+                            ucfirst($definitionArray['id']),
+                            $definitionArray['id']
+                        )
+                    );
+                }
+            }
+
+            $notCreated = [];
+            foreach ($definitionFiles as $item) {
+                if (!$this->createCless($item)['status']) {
+                    $notCreated[] = $this->createCless($item);
+                }
+            }
+
+            if (count($notCreated)) {
+                throw new InstallationException(
+                    sprintf(
+                        count($notCreated) > 1 ? 'Failed to create "%s" classes' : 'Failed to create "%s" class',
+                        implode(', ', array_column($notCreated, 'className'))
+                    )
+                );
+            }
+
+            PimcoreService::createWebsiteSetting();
+        } catch (\Exception $e) {
+            throw new InstallationException("Failed to install: ".$e);
+        }
 
 
         $dataportFiles = $this->getDataportFiles();

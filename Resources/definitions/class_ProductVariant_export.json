@@ -1,7 +1,7 @@
 {
-    "id": "productVariant",
+    "id": "productvariant",
     "description": "",
-    "modificationDate": 1681484192,
+    "modificationDate": 1681885228,
     "parentClass": "",
     "implementsInterfaces": "",
     "listingParentClass": "",
@@ -11,9 +11,6 @@
     "allowVariants": false,
     "showVariants": false,
     "layoutDefinitions": {
-        "fieldtype": "panel",
-        "layout": null,
-        "border": false,
         "name": "pimcore_root",
         "type": null,
         "region": null,
@@ -27,12 +24,23 @@
         "permissions": null,
         "children": [
             {
+                "name": "localizedfields",
+                "title": "Product",
+                "tooltip": "",
+                "mandatory": false,
+                "noteditable": false,
+                "index": null,
+                "locked": false,
+                "style": "",
+                "permissions": null,
+                "datatype": "data",
                 "fieldtype": "localizedfields",
+                "relationType": false,
+                "invisible": false,
+                "visibleGridView": true,
+                "visibleSearch": true,
                 "children": [
                     {
-                        "fieldtype": "tabpanel",
-                        "border": false,
-                        "tabPosition": null,
                         "name": "product",
                         "type": null,
                         "region": null,
@@ -46,9 +54,6 @@
                         "permissions": null,
                         "children": [
                             {
-                                "fieldtype": "panel",
-                                "layout": null,
-                                "border": false,
                                 "name": "main_information",
                                 "type": null,
                                 "region": null,
@@ -62,7 +67,6 @@
                                 "permissions": null,
                                 "children": [
                                     {
-                                        "fieldtype": "fieldset",
                                         "name": "main_information",
                                         "type": null,
                                         "region": null,
@@ -76,16 +80,6 @@
                                         "permissions": null,
                                         "children": [
                                             {
-                                                "fieldtype": "numeric",
-                                                "width": "",
-                                                "defaultValue": null,
-                                                "integer": true,
-                                                "unsigned": false,
-                                                "minValue": null,
-                                                "maxValue": null,
-                                                "unique": false,
-                                                "decimalSize": null,
-                                                "decimalPrecision": null,
                                                 "name": "bigcommerce_id",
                                                 "title": "Bigcommerce ID",
                                                 "tooltip": "The product ID of the BigCommerce system",
@@ -96,21 +90,23 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "numeric",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "defaultValue": null,
+                                                "integer": true,
+                                                "unsigned": false,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "unique": false,
+                                                "decimalSize": null,
+                                                "decimalPrecision": null,
                                                 "defaultValueGenerator": ""
                                             },
                                             {
-                                                "fieldtype": "input",
-                                                "width": "",
-                                                "defaultValue": null,
-                                                "columnLength": 190,
-                                                "regex": "",
-                                                "regexFlags": [],
-                                                "unique": true,
-                                                "showCharCount": false,
                                                 "name": "sku",
                                                 "title": "SKU",
                                                 "tooltip": "A unique user-defined product code\/stock keeping unit (SKU).",
@@ -121,19 +117,27 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "input",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "defaultValue": null,
+                                                "columnLength": 190,
+                                                "regex": "",
+                                                "regexFlags": [],
+                                                "unique": true,
+                                                "showCharCount": false,
                                                 "defaultValueGenerator": ""
                                             }
                                         ],
                                         "locked": false,
+                                        "fieldtype": "fieldset",
                                         "labelWidth": 130,
                                         "labelAlign": "left"
                                     },
                                     {
-                                        "fieldtype": "fieldset",
                                         "name": "price",
                                         "type": null,
                                         "region": null,
@@ -147,22 +151,6 @@
                                         "permissions": null,
                                         "children": [
                                             {
-                                                "fieldtype": "quantityValue",
-                                                "width": "",
-                                                "unitWidth": "",
-                                                "defaultValue": 0,
-                                                "defaultUnit": "5",
-                                                "validUnits": [
-                                                    "5"
-                                                ],
-                                                "integer": false,
-                                                "unsigned": false,
-                                                "minValue": null,
-                                                "maxValue": null,
-                                                "unique": false,
-                                                "decimalSize": null,
-                                                "decimalPrecision": 2,
-                                                "autoConvert": false,
                                                 "name": "cost_price",
                                                 "title": "Cost price",
                                                 "tooltip": "The cost price of the product. Stored for reference only; it is not used or displayed anywhere on the store.",
@@ -173,14 +161,11 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "quantityValue",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
-                                                "defaultValueGenerator": ""
-                                            },
-                                            {
-                                                "fieldtype": "quantityValue",
                                                 "width": "",
                                                 "unitWidth": "",
                                                 "defaultValue": 0,
@@ -196,6 +181,9 @@
                                                 "decimalSize": null,
                                                 "decimalPrecision": 2,
                                                 "autoConvert": false,
+                                                "defaultValueGenerator": ""
+                                            },
+                                            {
                                                 "name": "price",
                                                 "title": "Price",
                                                 "tooltip": "The price of the product. The price should include or exclude tax, based on the store settings.",
@@ -206,14 +194,11 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "quantityValue",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
-                                                "defaultValueGenerator": ""
-                                            },
-                                            {
-                                                "fieldtype": "quantityValue",
                                                 "width": "",
                                                 "unitWidth": "",
                                                 "defaultValue": 0,
@@ -229,6 +214,9 @@
                                                 "decimalSize": null,
                                                 "decimalPrecision": 2,
                                                 "autoConvert": false,
+                                                "defaultValueGenerator": ""
+                                            },
+                                            {
                                                 "name": "retail_price",
                                                 "title": "Retail price",
                                                 "tooltip": "The retail cost of the product. If entered, the retail cost price will be shown on the product page.",
@@ -239,14 +227,11 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "quantityValue",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
-                                                "defaultValueGenerator": ""
-                                            },
-                                            {
-                                                "fieldtype": "quantityValue",
                                                 "width": "",
                                                 "unitWidth": "",
                                                 "defaultValue": 0,
@@ -262,6 +247,9 @@
                                                 "decimalSize": null,
                                                 "decimalPrecision": 2,
                                                 "autoConvert": false,
+                                                "defaultValueGenerator": ""
+                                            },
+                                            {
                                                 "name": "sale_price",
                                                 "title": "Sale price",
                                                 "tooltip": "If entered, the sale price will be used instead of value in the price field when calculating the product's cost.",
@@ -272,19 +260,35 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "quantityValue",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "unitWidth": "",
+                                                "defaultValue": 0,
+                                                "defaultUnit": "5",
+                                                "validUnits": [
+                                                    "5"
+                                                ],
+                                                "integer": false,
+                                                "unsigned": false,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "unique": false,
+                                                "decimalSize": null,
+                                                "decimalPrecision": 2,
+                                                "autoConvert": false,
                                                 "defaultValueGenerator": ""
                                             }
                                         ],
                                         "locked": false,
+                                        "fieldtype": "fieldset",
                                         "labelWidth": 130,
                                         "labelAlign": "left"
                                     },
                                     {
-                                        "fieldtype": "fieldset",
                                         "name": "codes_numbers",
                                         "type": null,
                                         "region": null,
@@ -298,14 +302,6 @@
                                         "permissions": null,
                                         "children": [
                                             {
-                                                "fieldtype": "input",
-                                                "width": "",
-                                                "defaultValue": null,
-                                                "columnLength": 190,
-                                                "regex": "",
-                                                "regexFlags": [],
-                                                "unique": false,
-                                                "showCharCount": false,
                                                 "name": "upc",
                                                 "title": "UPC",
                                                 "tooltip": "The UPC code used in feeds for shopping comparison sites and external channel integrations.",
@@ -316,14 +312,11 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "input",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
-                                                "defaultValueGenerator": ""
-                                            },
-                                            {
-                                                "fieldtype": "input",
                                                 "width": "",
                                                 "defaultValue": null,
                                                 "columnLength": 190,
@@ -331,6 +324,9 @@
                                                 "regexFlags": [],
                                                 "unique": false,
                                                 "showCharCount": false,
+                                                "defaultValueGenerator": ""
+                                            },
+                                            {
                                                 "name": "gtin",
                                                 "title": "GTIN",
                                                 "tooltip": "Global Trade Item Number",
@@ -341,14 +337,11 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "input",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
-                                                "defaultValueGenerator": ""
-                                            },
-                                            {
-                                                "fieldtype": "input",
                                                 "width": "",
                                                 "defaultValue": null,
                                                 "columnLength": 190,
@@ -356,6 +349,9 @@
                                                 "regexFlags": [],
                                                 "unique": false,
                                                 "showCharCount": false,
+                                                "defaultValueGenerator": ""
+                                            },
+                                            {
                                                 "name": "mpn",
                                                 "title": "MPN",
                                                 "tooltip": "Manufacturer Part Number",
@@ -366,27 +362,36 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "input",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "defaultValue": null,
+                                                "columnLength": 190,
+                                                "regex": "",
+                                                "regexFlags": [],
+                                                "unique": false,
+                                                "showCharCount": false,
                                                 "defaultValueGenerator": ""
                                             }
                                         ],
                                         "locked": false,
+                                        "fieldtype": "fieldset",
                                         "labelWidth": 130,
                                         "labelAlign": "left"
                                     }
                                 ],
                                 "locked": false,
+                                "fieldtype": "panel",
+                                "layout": null,
+                                "border": false,
                                 "icon": "",
                                 "labelWidth": 0,
                                 "labelAlign": "left"
                             },
                             {
-                                "fieldtype": "panel",
-                                "layout": null,
-                                "border": false,
                                 "name": "technical_peremeters",
                                 "type": null,
                                 "region": null,
@@ -400,7 +405,21 @@
                                 "permissions": null,
                                 "children": [
                                     {
+                                        "name": "weight",
+                                        "title": "Weight",
+                                        "tooltip": "Weight of the product, which can be used when calculating shipping costs. This is based on the unit set on the store",
+                                        "mandatory": true,
+                                        "noteditable": false,
+                                        "index": false,
+                                        "locked": false,
+                                        "style": "",
+                                        "permissions": null,
+                                        "datatype": "data",
                                         "fieldtype": "quantityValue",
+                                        "relationType": false,
+                                        "invisible": false,
+                                        "visibleGridView": false,
+                                        "visibleSearch": false,
                                         "width": "",
                                         "unitWidth": "",
                                         "defaultValue": 0,
@@ -416,39 +435,9 @@
                                         "decimalSize": null,
                                         "decimalPrecision": null,
                                         "autoConvert": false,
-                                        "name": "weight",
-                                        "title": "Weight",
-                                        "tooltip": "Weight of the product, which can be used when calculating shipping costs. This is based on the unit set on the store",
-                                        "mandatory": true,
-                                        "noteditable": false,
-                                        "index": false,
-                                        "locked": false,
-                                        "style": "",
-                                        "permissions": null,
-                                        "datatype": "data",
-                                        "relationType": false,
-                                        "invisible": false,
-                                        "visibleGridView": false,
-                                        "visibleSearch": false,
                                         "defaultValueGenerator": ""
                                     },
                                     {
-                                        "fieldtype": "quantityValue",
-                                        "width": "",
-                                        "unitWidth": "",
-                                        "defaultValue": 0,
-                                        "defaultUnit": "1",
-                                        "validUnits": [
-                                            "7"
-                                        ],
-                                        "integer": false,
-                                        "unsigned": false,
-                                        "minValue": null,
-                                        "maxValue": null,
-                                        "unique": false,
-                                        "decimalSize": null,
-                                        "decimalPrecision": null,
-                                        "autoConvert": false,
                                         "name": "width",
                                         "title": "Width",
                                         "tooltip": "Width of the product, which can be used when calculating shipping costs.",
@@ -459,14 +448,11 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
+                                        "fieldtype": "quantityValue",
                                         "relationType": false,
                                         "invisible": false,
                                         "visibleGridView": false,
                                         "visibleSearch": false,
-                                        "defaultValueGenerator": ""
-                                    },
-                                    {
-                                        "fieldtype": "quantityValue",
                                         "width": "",
                                         "unitWidth": "",
                                         "defaultValue": 0,
@@ -482,6 +468,9 @@
                                         "decimalSize": null,
                                         "decimalPrecision": null,
                                         "autoConvert": false,
+                                        "defaultValueGenerator": ""
+                                    },
+                                    {
                                         "name": "height",
                                         "title": "Depth",
                                         "tooltip": "Height of the product, which can be used when calculating shipping costs.",
@@ -492,14 +481,11 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
+                                        "fieldtype": "quantityValue",
                                         "relationType": false,
                                         "invisible": false,
                                         "visibleGridView": false,
                                         "visibleSearch": false,
-                                        "defaultValueGenerator": ""
-                                    },
-                                    {
-                                        "fieldtype": "quantityValue",
                                         "width": "",
                                         "unitWidth": "",
                                         "defaultValue": 0,
@@ -515,6 +501,9 @@
                                         "decimalSize": null,
                                         "decimalPrecision": null,
                                         "autoConvert": false,
+                                        "defaultValueGenerator": ""
+                                    },
+                                    {
                                         "name": "depth",
                                         "title": "Depth",
                                         "tooltip": "Depth of the product, which can be used when calculating shipping costs.",
@@ -525,22 +514,38 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
+                                        "fieldtype": "quantityValue",
                                         "relationType": false,
                                         "invisible": false,
                                         "visibleGridView": false,
                                         "visibleSearch": false,
+                                        "width": "",
+                                        "unitWidth": "",
+                                        "defaultValue": 0,
+                                        "defaultUnit": "1",
+                                        "validUnits": [
+                                            "7"
+                                        ],
+                                        "integer": false,
+                                        "unsigned": false,
+                                        "minValue": null,
+                                        "maxValue": null,
+                                        "unique": false,
+                                        "decimalSize": null,
+                                        "decimalPrecision": null,
+                                        "autoConvert": false,
                                         "defaultValueGenerator": ""
                                     }
                                 ],
                                 "locked": false,
+                                "fieldtype": "panel",
+                                "layout": null,
+                                "border": false,
                                 "icon": "",
                                 "labelWidth": 130,
                                 "labelAlign": "left"
                             },
                             {
-                                "fieldtype": "panel",
-                                "layout": null,
-                                "border": false,
                                 "name": "inventory_shipping",
                                 "type": null,
                                 "region": null,
@@ -554,7 +559,6 @@
                                 "permissions": null,
                                 "children": [
                                     {
-                                        "fieldtype": "fieldset",
                                         "name": "inventory",
                                         "type": null,
                                         "region": null,
@@ -568,16 +572,6 @@
                                         "permissions": null,
                                         "children": [
                                             {
-                                                "fieldtype": "numeric",
-                                                "width": "",
-                                                "defaultValue": null,
-                                                "integer": false,
-                                                "unsigned": false,
-                                                "minValue": null,
-                                                "maxValue": null,
-                                                "unique": false,
-                                                "decimalSize": null,
-                                                "decimalPrecision": null,
                                                 "name": "inventory_level",
                                                 "title": "Inventory level",
                                                 "tooltip": "Current inventory level of the product. Simple inventory tracking must be enabled (See the inventory_tracking field) for this to take any effect.",
@@ -588,14 +582,11 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "numeric",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
-                                                "defaultValueGenerator": ""
-                                            },
-                                            {
-                                                "fieldtype": "numeric",
                                                 "width": "",
                                                 "defaultValue": null,
                                                 "integer": false,
@@ -605,6 +596,9 @@
                                                 "unique": false,
                                                 "decimalSize": null,
                                                 "decimalPrecision": null,
+                                                "defaultValueGenerator": ""
+                                            },
+                                            {
                                                 "name": "inventory_warning_level",
                                                 "title": "Inventory warning level",
                                                 "tooltip": "Inventory warning level for the product. When the product's inventory level drops below the warning level, the store owner will be informed. Simple inventory tracking must be enabled (see the inventory_tracking field) for this to take any effect.",
@@ -615,23 +609,23 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "numeric",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "defaultValue": null,
+                                                "integer": false,
+                                                "unsigned": false,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "unique": false,
+                                                "decimalSize": null,
+                                                "decimalPrecision": null,
                                                 "defaultValueGenerator": ""
                                             },
                                             {
-                                                "fieldtype": "input",
-                                                "width": "",
-                                                "defaultValue": "none",
-                                                "columnLength": 190,
-                                                "regex": "",
-                                                "regexFlags": [
-                                                    "none"
-                                                ],
-                                                "unique": false,
-                                                "showCharCount": false,
                                                 "name": "bin_picking_number",
                                                 "title": "Bin picking number",
                                                 "tooltip": "Identifies where in a warehouse the variant is located.",
@@ -642,19 +636,29 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "input",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "defaultValue": "none",
+                                                "columnLength": 190,
+                                                "regex": "",
+                                                "regexFlags": [
+                                                    "none"
+                                                ],
+                                                "unique": false,
+                                                "showCharCount": false,
                                                 "defaultValueGenerator": ""
                                             }
                                         ],
                                         "locked": false,
+                                        "fieldtype": "fieldset",
                                         "labelWidth": 205,
                                         "labelAlign": "left"
                                     },
                                     {
-                                        "fieldtype": "fieldset",
                                         "name": "purchasing",
                                         "type": null,
                                         "region": null,
@@ -668,8 +672,6 @@
                                         "permissions": null,
                                         "children": [
                                             {
-                                                "fieldtype": "checkbox",
-                                                "defaultValue": null,
                                                 "name": "purchasing_disabled",
                                                 "title": "Purchasing disabled",
                                                 "tooltip": "If checked, this variant will not be purchasable on the storefront.",
@@ -680,21 +682,15 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "checkbox",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "defaultValue": null,
                                                 "defaultValueGenerator": ""
                                             },
                                             {
-                                                "fieldtype": "input",
-                                                "width": "",
-                                                "defaultValue": null,
-                                                "columnLength": 190,
-                                                "regex": "",
-                                                "regexFlags": [],
-                                                "unique": false,
-                                                "showCharCount": false,
                                                 "name": "purchasing_disabled_message",
                                                 "title": "Purchasing disabled message",
                                                 "tooltip": "If purchasing_disabled is true, this message should show on the storefront when the variant is selected.",
@@ -705,19 +701,27 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "input",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "width": "",
+                                                "defaultValue": null,
+                                                "columnLength": 190,
+                                                "regex": "",
+                                                "regexFlags": [],
+                                                "unique": false,
+                                                "showCharCount": false,
                                                 "defaultValueGenerator": ""
                                             }
                                         ],
                                         "locked": false,
+                                        "fieldtype": "fieldset",
                                         "labelWidth": 205,
                                         "labelAlign": "left"
                                     },
                                     {
-                                        "fieldtype": "fieldset",
                                         "name": "shipping_cost",
                                         "type": null,
                                         "region": null,
@@ -731,7 +735,21 @@
                                         "permissions": null,
                                         "children": [
                                             {
+                                                "name": "fixed_cost_shipping_price",
+                                                "title": "Fixed cost shipping price",
+                                                "tooltip": "A fixed shipping cost for the product. If defined, this value will be used during checkout instead of normal shipping-cost calculation.",
+                                                "mandatory": false,
+                                                "noteditable": false,
+                                                "index": false,
+                                                "locked": false,
+                                                "style": "",
+                                                "permissions": null,
+                                                "datatype": "data",
                                                 "fieldtype": "quantityValue",
+                                                "relationType": false,
+                                                "invisible": false,
+                                                "visibleGridView": false,
+                                                "visibleSearch": false,
                                                 "width": "",
                                                 "unitWidth": "",
                                                 "defaultValue": 0,
@@ -747,25 +765,9 @@
                                                 "decimalSize": null,
                                                 "decimalPrecision": 2,
                                                 "autoConvert": false,
-                                                "name": "fixed_cost_shipping_price",
-                                                "title": "Fixed cost shipping price",
-                                                "tooltip": "A fixed shipping cost for the product. If defined, this value will be used during checkout instead of normal shipping-cost calculation.",
-                                                "mandatory": false,
-                                                "noteditable": false,
-                                                "index": false,
-                                                "locked": false,
-                                                "style": "",
-                                                "permissions": null,
-                                                "datatype": "data",
-                                                "relationType": false,
-                                                "invisible": false,
-                                                "visibleGridView": false,
-                                                "visibleSearch": false,
                                                 "defaultValueGenerator": ""
                                             },
                                             {
-                                                "fieldtype": "checkbox",
-                                                "defaultValue": null,
                                                 "name": "is_free_shipping",
                                                 "title": "Is free shipping",
                                                 "tooltip": "Flag used to indicate whether the product has free shipping. If true, the shipping cost for the product will be zero.",
@@ -776,27 +778,30 @@
                                                 "style": "",
                                                 "permissions": null,
                                                 "datatype": "data",
+                                                "fieldtype": "checkbox",
                                                 "relationType": false,
                                                 "invisible": false,
                                                 "visibleGridView": false,
                                                 "visibleSearch": false,
+                                                "defaultValue": null,
                                                 "defaultValueGenerator": ""
                                             }
                                         ],
                                         "locked": false,
+                                        "fieldtype": "fieldset",
                                         "labelWidth": 205,
                                         "labelAlign": "left"
                                     }
                                 ],
                                 "locked": false,
+                                "fieldtype": "panel",
+                                "layout": null,
+                                "border": false,
                                 "icon": "",
                                 "labelWidth": 0,
                                 "labelAlign": "left"
                             },
                             {
-                                "fieldtype": "panel",
-                                "layout": null,
-                                "border": false,
                                 "name": "relations",
                                 "type": null,
                                 "region": null,
@@ -810,24 +815,6 @@
                                 "permissions": null,
                                 "children": [
                                     {
-                                        "fieldtype": "manyToManyRelation",
-                                        "width": "",
-                                        "height": "",
-                                        "maxItems": null,
-                                        "assetUploadPath": "",
-                                        "relationType": true,
-                                        "objectsAllowed": true,
-                                        "assetsAllowed": false,
-                                        "assetTypes": [],
-                                        "documentsAllowed": false,
-                                        "documentTypes": [],
-                                        "enableTextSelection": false,
-                                        "classes": [
-                                            {
-                                                "classes": "Product"
-                                            }
-                                        ],
-                                        "pathFormatterClass": "",
                                         "name": "product",
                                         "title": "Product",
                                         "tooltip": "",
@@ -838,29 +825,29 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
+                                        "fieldtype": "manyToManyRelation",
+                                        "relationType": true,
                                         "invisible": false,
                                         "visibleGridView": false,
-                                        "visibleSearch": false
-                                    },
-                                    {
-                                        "fieldtype": "manyToManyRelation",
+                                        "visibleSearch": false,
+                                        "classes": [
+                                            {
+                                                "classes": "Product"
+                                            }
+                                        ],
+                                        "pathFormatterClass": "",
                                         "width": "",
                                         "height": "",
                                         "maxItems": null,
                                         "assetUploadPath": "",
-                                        "relationType": true,
                                         "objectsAllowed": true,
                                         "assetsAllowed": false,
                                         "assetTypes": [],
                                         "documentsAllowed": false,
                                         "documentTypes": [],
-                                        "enableTextSelection": false,
-                                        "classes": [
-                                            {
-                                                "classes": "OptionValue"
-                                            }
-                                        ],
-                                        "pathFormatterClass": "",
+                                        "enableTextSelection": false
+                                    },
+                                    {
                                         "name": "option_values",
                                         "title": "option_values",
                                         "tooltip": "",
@@ -871,20 +858,38 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
+                                        "fieldtype": "manyToManyRelation",
+                                        "relationType": true,
                                         "invisible": false,
                                         "visibleGridView": false,
-                                        "visibleSearch": false
+                                        "visibleSearch": false,
+                                        "classes": [
+                                            {
+                                                "classes": "OptionValue"
+                                            }
+                                        ],
+                                        "pathFormatterClass": "",
+                                        "width": "",
+                                        "height": "",
+                                        "maxItems": null,
+                                        "assetUploadPath": "",
+                                        "objectsAllowed": true,
+                                        "assetsAllowed": false,
+                                        "assetTypes": [],
+                                        "documentsAllowed": false,
+                                        "documentTypes": [],
+                                        "enableTextSelection": false
                                     }
                                 ],
                                 "locked": false,
+                                "fieldtype": "panel",
+                                "layout": null,
+                                "border": false,
                                 "icon": "",
                                 "labelWidth": 0,
                                 "labelAlign": "left"
                             },
                             {
-                                "fieldtype": "panel",
-                                "layout": null,
-                                "border": false,
                                 "name": "image",
                                 "type": null,
                                 "region": null,
@@ -898,7 +903,6 @@
                                 "permissions": null,
                                 "children": [
                                     {
-                                        "fieldtype": "image",
                                         "name": "image",
                                         "title": "Image",
                                         "tooltip": "",
@@ -909,6 +913,7 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
+                                        "fieldtype": "image",
                                         "relationType": false,
                                         "invisible": false,
                                         "visibleGridView": false,
@@ -919,18 +924,22 @@
                                     }
                                 ],
                                 "locked": false,
+                                "fieldtype": "panel",
+                                "layout": null,
+                                "border": false,
                                 "icon": "",
                                 "labelWidth": 0,
                                 "labelAlign": "left"
                             }
                         ],
-                        "locked": false
+                        "locked": false,
+                        "fieldtype": "tabpanel",
+                        "border": false,
+                        "tabPosition": null
                     }
                 ],
-                "name": "localizedfields",
                 "region": null,
                 "layout": null,
-                "title": "Product",
                 "width": "",
                 "height": "",
                 "maxTabs": null,
@@ -941,23 +950,14 @@
                 "fieldDefinitionsCache": null,
                 "permissionView": null,
                 "permissionEdit": null,
-                "tooltip": "",
-                "mandatory": false,
-                "noteditable": false,
-                "index": null,
-                "locked": false,
-                "style": "",
-                "permissions": null,
-                "datatype": "data",
-                "relationType": false,
-                "invisible": false,
-                "visibleGridView": true,
-                "visibleSearch": true,
                 "labelWidth": 0,
                 "labelAlign": "left"
             }
         ],
         "locked": false,
+        "fieldtype": "panel",
+        "layout": null,
+        "border": false,
         "icon": null,
         "labelWidth": 100,
         "labelAlign": "left"

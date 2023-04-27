@@ -1,7 +1,7 @@
 {
     "id": "product",
     "description": "",
-    "modificationDate": 1682430669,
+    "modificationDate": 1682491014,
     "parentClass": "",
     "implementsInterfaces": "",
     "listingParentClass": "",
@@ -235,7 +235,7 @@
                                                 "name": "price",
                                                 "title": "Price",
                                                 "tooltip": "The price of the product. The price should include or exclude tax, based on the store settings.",
-                                                "mandatory": true,
+                                                "mandatory": false,
                                                 "noteditable": false,
                                                 "index": false,
                                                 "locked": false,

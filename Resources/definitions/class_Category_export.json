@@ -1,7 +1,7 @@
 {
     "id": "category",
     "description": "",
-    "modificationDate": 1682346721,
+    "modificationDate": 1682408721,
     "parentClass": "",
     "implementsInterfaces": "",
     "listingParentClass": "",
@@ -55,7 +55,7 @@
                         "children": [
                             {
                                 "name": "bigcommerce_id",
-                                "title": "Bigcommerce _id",
+                                "title": "Bigcommerce ID",
                                 "tooltip": "The category ID of the BigCommerce system",
                                 "mandatory": false,
                                 "noteditable": false,
