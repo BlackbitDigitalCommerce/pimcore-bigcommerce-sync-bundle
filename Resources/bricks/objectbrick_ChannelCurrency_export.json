@@ -1,17 +1,10 @@
 {
-    "id": "customField",
-    "description": "",
-    "modificationDate": 1683643755,
     "parentClass": "",
     "implementsInterfaces": "",
-    "listingParentClass": "",
-    "useTraits": "",
-    "listingUseTraits": "",
-    "allowInherit": false,
-    "allowVariants": false,
-    "showVariants": false,
+    "title": "Currencies",
+    "group": "",
     "layoutDefinitions": {
-        "name": "pimcore_root",
+        "name": null,
         "type": null,
         "region": null,
         "title": null,
@@ -25,7 +18,7 @@
         "children": [
             {
                 "name": "localizedfields",
-                "title": "Custom Field",
+                "title": "",
                 "tooltip": "",
                 "mandatory": false,
                 "noteditable": false,
@@ -54,39 +47,12 @@
                         "permissions": null,
                         "children": [
                             {
-                                "name": "bigcommerce_id",
-                                "title": "Bigcommerce ID",
-                                "tooltip": "The custom field ID of the BigCommerce system",
-                                "mandatory": false,
-                                "noteditable": false,
-                                "index": true,
-                                "locked": false,
-                                "style": "",
-                                "permissions": null,
-                                "datatype": "data",
-                                "fieldtype": "numeric",
-                                "relationType": false,
-                                "invisible": false,
-                                "visibleGridView": false,
-                                "visibleSearch": false,
-                                "width": "",
-                                "defaultValue": null,
-                                "integer": false,
-                                "unsigned": false,
-                                "minValue": null,
-                                "maxValue": null,
-                                "unique": false,
-                                "decimalSize": null,
-                                "decimalPrecision": null,
-                                "defaultValueGenerator": ""
-                            },
-                            {
-                                "name": "bigcommerce_product_id",
-                                "title": "Bigcommerce Product ID",
+                                "name": "bigcommerce_channel_id",
+                                "title": "Bigcommerce Channel ID",
                                 "tooltip": "",
                                 "mandatory": false,
                                 "noteditable": false,
-                                "index": true,
+                                "index": false,
                                 "locked": false,
                                 "style": "",
                                 "permissions": null,
@@ -108,35 +74,32 @@
                                 "defaultValueGenerator": ""
                             },
                             {
-                                "name": "name",
-                                "title": "Name",
-                                "tooltip": "The name of the field, shown on the storefront, orders, etc. max. chars 250",
-                                "mandatory": true,
+                                "name": "enabled_currencies",
+                                "title": "Enabled currencies",
+                                "tooltip": "",
+                                "mandatory": false,
                                 "noteditable": false,
                                 "index": false,
                                 "locked": false,
                                 "style": "",
                                 "permissions": null,
                                 "datatype": "data",
-                                "fieldtype": "input",
+                                "fieldtype": "textarea",
                                 "relationType": false,
                                 "invisible": false,
                                 "visibleGridView": false,
                                 "visibleSearch": false,
                                 "width": "50%",
-                                "defaultValue": null,
-                                "columnLength": 190,
-                                "regex": "",
-                                "regexFlags": [],
-                                "unique": false,
+                                "height": 2,
+                                "maxLength": null,
                                 "showCharCount": false,
-                                "defaultValueGenerator": ""
+                                "excludeFromSearchIndex": false
                             },
                             {
-                                "name": "custom_field_value",
-                                "title": "Value",
-                                "tooltip": "The name of the field, shown on the storefront, orders, etc. max. chars 250",
-                                "mandatory": true,
+                                "name": "default_currency",
+                                "title": "Default currency",
+                                "tooltip": "",
+                                "mandatory": false,
                                 "noteditable": false,
                                 "index": false,
                                 "locked": false,
@@ -148,7 +111,7 @@
                                 "invisible": false,
                                 "visibleGridView": false,
                                 "visibleSearch": false,
-                                "width": "50%",
+                                "width": "",
                                 "defaultValue": null,
                                 "columnLength": 190,
                                 "regex": "",
@@ -176,7 +139,7 @@
                 "fieldDefinitionsCache": null,
                 "permissionView": null,
                 "permissionEdit": null,
-                "labelWidth": 130,
+                "labelWidth": 0,
                 "labelAlign": "left"
             }
         ],
@@ -188,32 +151,11 @@
         "labelWidth": 100,
         "labelAlign": "left"
     },
-    "icon": "",
-    "previewUrl": "",
-    "group": "",
-    "showAppLoggerTab": false,
-    "linkGeneratorReference": "",
-    "previewGeneratorReference": "",
-    "compositeIndices": [],
     "generateTypeDeclarations": true,
-    "showFieldLookup": false,
-    "propertyVisibility": {
-        "grid": {
-            "id": true,
-            "key": false,
-            "path": true,
-            "published": true,
-            "modificationDate": true,
-            "creationDate": true
-        },
-        "search": {
-            "id": true,
-            "key": false,
-            "path": true,
-            "published": true,
-            "modificationDate": true,
-            "creationDate": true
+    "classDefinitions": [
+        {
+            "classname": "Channel",
+            "fieldname": "currencies"
         }
-    },
-    "enableGridLocking": false
+    ]
 }

@@ -4,14 +4,14 @@
         "name": "Bigcommerce Import Store Info EN",
         "description": "",
         "sourcetype": "json",
-        "sourceconfig": "a:8:{s:6:\"fields\";a:44:{s:7:\"field_2\";a:1:{s:9:\"json-path\";s:2:\"id\";}s:7:\"field_1\";a:1:{s:9:\"json-path\";s:6:\"domain\";}s:7:\"field_3\";a:1:{s:9:\"json-path\";s:10:\"secure_url\";}s:7:\"field_4\";a:1:{s:9:\"json-path\";s:22:\"control_panel_base_url\";}s:7:\"field_5\";a:1:{s:9:\"json-path\";s:6:\"status\";}s:7:\"field_6\";a:1:{s:9:\"json-path\";s:4:\"name\";}s:7:\"field_7\";a:1:{s:9:\"json-path\";s:10:\"first_name\";}s:7:\"field_8\";a:1:{s:9:\"json-path\";s:9:\"last_name\";}s:7:\"field_9\";a:1:{s:9:\"json-path\";s:7:\"address\";}s:8:\"field_10\";a:1:{s:9:\"json-path\";s:7:\"country\";}s:8:\"field_11\";a:1:{s:9:\"json-path\";s:12:\"country_code\";}s:8:\"field_12\";a:1:{s:9:\"json-path\";s:5:\"phone\";}s:8:\"field_13\";a:1:{s:9:\"json-path\";s:11:\"admin_email\";}s:8:\"field_14\";a:1:{s:9:\"json-path\";s:11:\"order_email\";}s:8:\"field_15\";a:1:{s:9:\"json-path\";s:11:\"favicon_url\";}s:8:\"field_16\";a:1:{s:9:\"json-path\";s:13:\"timezone.name\";}s:8:\"field_18\";a:1:{s:9:\"json-path\";s:19:\"timezone.raw_offset\";}s:8:\"field_19\";a:1:{s:9:\"json-path\";s:19:\"timezone.dst_offset\";}s:8:\"field_20\";a:1:{s:9:\"json-path\";s:23:\"timezone.dst_correction\";}s:8:\"field_21\";a:1:{s:9:\"json-path\";s:28:\"timezone.date_format.display\";}s:8:\"field_22\";a:1:{s:9:\"json-path\";s:27:\"timezone.date_format.export\";}s:8:\"field_23\";a:1:{s:9:\"json-path\";s:37:\"timezone.data_format.extended_display\";}s:8:\"field_24\";a:1:{s:9:\"json-path\";s:8:\"language\";}s:8:\"field_25\";a:1:{s:9:\"json-path\";s:8:\"currency\";}s:8:\"field_26\";a:1:{s:9:\"json-path\";s:15:\"currency_symbol\";}s:8:\"field_27\";a:1:{s:9:\"json-path\";s:17:\"decimal_separator\";}s:8:\"field_28\";a:1:{s:9:\"json-path\";s:19:\"thousands_separator\";}s:8:\"field_29\";a:1:{s:9:\"json-path\";s:14:\"decimal_places\";}s:8:\"field_30\";a:1:{s:9:\"json-path\";s:24:\"currency_symbol_location\";}s:8:\"field_31\";a:1:{s:9:\"json-path\";s:12:\"weight_units\";}s:8:\"field_32\";a:1:{s:9:\"json-path\";s:15:\"dimension_units\";}s:8:\"field_33\";a:1:{s:9:\"json-path\";s:24:\"dimension_decimal_places\";}s:8:\"field_34\";a:1:{s:9:\"json-path\";s:23:\"dimension_decimal_token\";}s:8:\"field_35\";a:1:{s:9:\"json-path\";s:25:\"dimension_thousands_token\";}s:8:\"field_36\";a:1:{s:9:\"json-path\";s:9:\"plan_name\";}s:8:\"field_37\";a:1:{s:9:\"json-path\";s:10:\"plan_level\";}s:8:\"field_38\";a:1:{s:9:\"json-path\";s:8:\"industry\";}s:8:\"field_39\";a:1:{s:9:\"json-path\";s:8:\"logo.url\";}s:8:\"field_40\";a:1:{s:9:\"json-path\";s:25:\"is_price_entered_with_tax\";}s:8:\"field_41\";a:1:{s:9:\"json-path\";s:25:\"active_comparison_modules\";}s:8:\"field_42\";a:1:{s:9:\"json-path\";s:24:\"features.stencil_enabled\";}s:8:\"field_43\";a:1:{s:9:\"json-path\";s:30:\"features.sitewidehttps_enabled\";}s:8:\"field_44\";a:1:{s:9:\"json-path\";s:28:\"features.facebook_catalog_id\";}s:8:\"field_45\";a:1:{s:9:\"json-path\";s:22:\"features.checkout_type\";}}s:4:\"file\";s:247:\"curl --request GET \\\n  --url 'https://api.bigcommerce.com/stores/{{ BIGCOMMERCE_STORE#en }}/v2/store' \\\n  --header 'Accept: application/json' \\\n  --header 'Content-Type: application/json' \\\n  --header 'X-Auth-Token: {{ BIGCOMMERCE_API_TOKEN#en }}'\";s:10:\"autoImport\";b:0;s:17:\"incrementalExport\";b:0;s:11:\"assetSource\";s:6:\"/Store\";s:13:\"archiveFolder\";s:0:\"\";s:14:\"item-json-path\";s:0:\"\";s:9:\"hasHeader\";b:0;}",
-        "targetconfig": "a:12:{s:4:\"mode\";s:1:\"3\";s:9:\"itemClass\";s:5:\"store\";s:10:\"itemFolder\";s:6:\"/Store\";s:14:\"masterDocument\";s:0:\"\";s:19:\"optimizeInheritance\";s:1:\"0\";s:14:\"skipVersioning\";b:0;s:16:\"javascriptEngine\";s:3:\"php\";s:11:\"assetFolder\";s:15:\"/Store/{{name}}\";s:8:\"idPrefix\";s:0:\"\";s:13:\"categoryClass\";s:0:\"\";s:17:\"fieldnameProducts\";s:0:\"\";s:17:\"compatibilityMode\";s:1:\"0\";}"
+        "sourceconfig": "a:8:{s:6:\"fields\";a:45:{s:7:\"field_2\";a:1:{s:9:\"json-path\";s:2:\"id\";}s:7:\"field_1\";a:1:{s:9:\"json-path\";s:6:\"domain\";}s:7:\"field_3\";a:1:{s:9:\"json-path\";s:10:\"secure_url\";}s:7:\"field_4\";a:1:{s:9:\"json-path\";s:22:\"control_panel_base_url\";}s:7:\"field_5\";a:1:{s:9:\"json-path\";s:6:\"status\";}s:7:\"field_6\";a:1:{s:9:\"json-path\";s:4:\"name\";}s:7:\"field_7\";a:1:{s:9:\"json-path\";s:10:\"first_name\";}s:7:\"field_8\";a:1:{s:9:\"json-path\";s:9:\"last_name\";}s:7:\"field_9\";a:1:{s:9:\"json-path\";s:7:\"address\";}s:8:\"field_10\";a:1:{s:9:\"json-path\";s:7:\"country\";}s:8:\"field_11\";a:1:{s:9:\"json-path\";s:12:\"country_code\";}s:8:\"field_12\";a:1:{s:9:\"json-path\";s:5:\"phone\";}s:8:\"field_13\";a:1:{s:9:\"json-path\";s:11:\"admin_email\";}s:8:\"field_14\";a:1:{s:9:\"json-path\";s:11:\"order_email\";}s:8:\"field_15\";a:1:{s:9:\"json-path\";s:11:\"favicon_url\";}s:8:\"field_16\";a:1:{s:9:\"json-path\";s:13:\"timezone.name\";}s:8:\"field_18\";a:1:{s:9:\"json-path\";s:19:\"timezone.raw_offset\";}s:8:\"field_19\";a:1:{s:9:\"json-path\";s:19:\"timezone.dst_offset\";}s:8:\"field_20\";a:1:{s:9:\"json-path\";s:23:\"timezone.dst_correction\";}s:8:\"field_21\";a:1:{s:9:\"json-path\";s:28:\"timezone.date_format.display\";}s:8:\"field_22\";a:1:{s:9:\"json-path\";s:27:\"timezone.date_format.export\";}s:8:\"field_23\";a:1:{s:9:\"json-path\";s:37:\"timezone.data_format.extended_display\";}s:8:\"field_24\";a:1:{s:9:\"json-path\";s:8:\"language\";}s:8:\"field_25\";a:1:{s:9:\"json-path\";s:8:\"currency\";}s:8:\"field_26\";a:1:{s:9:\"json-path\";s:15:\"currency_symbol\";}s:8:\"field_27\";a:1:{s:9:\"json-path\";s:17:\"decimal_separator\";}s:8:\"field_28\";a:1:{s:9:\"json-path\";s:19:\"thousands_separator\";}s:8:\"field_29\";a:1:{s:9:\"json-path\";s:14:\"decimal_places\";}s:8:\"field_30\";a:1:{s:9:\"json-path\";s:24:\"currency_symbol_location\";}s:8:\"field_31\";a:1:{s:9:\"json-path\";s:12:\"weight_units\";}s:8:\"field_32\";a:1:{s:9:\"json-path\";s:15:\"dimension_units\";}s:8:\"field_33\";a:1:{s:9:\"json-path\";s:24:\"dimension_decimal_places\";}s:8:\"field_34\";a:1:{s:9:\"json-path\";s:23:\"dimension_decimal_token\";}s:8:\"field_35\";a:1:{s:9:\"json-path\";s:25:\"dimension_thousands_token\";}s:8:\"field_36\";a:1:{s:9:\"json-path\";s:9:\"plan_name\";}s:8:\"field_37\";a:1:{s:9:\"json-path\";s:10:\"plan_level\";}s:8:\"field_38\";a:1:{s:9:\"json-path\";s:8:\"industry\";}s:8:\"field_39\";a:1:{s:9:\"json-path\";s:8:\"logo.url\";}s:8:\"field_40\";a:1:{s:9:\"json-path\";s:25:\"is_price_entered_with_tax\";}s:8:\"field_41\";a:1:{s:9:\"json-path\";s:25:\"active_comparison_modules\";}s:8:\"field_42\";a:1:{s:9:\"json-path\";s:24:\"features.stencil_enabled\";}s:8:\"field_43\";a:1:{s:9:\"json-path\";s:30:\"features.sitewidehttps_enabled\";}s:8:\"field_44\";a:1:{s:9:\"json-path\";s:28:\"features.facebook_catalog_id\";}s:8:\"field_45\";a:1:{s:9:\"json-path\";s:22:\"features.checkout_type\";}s:8:\"field_46\";a:1:{s:9:\"json-path\";s:28:\"date_format_extended_display\";}}s:4:\"file\";s:258:\"curl --request GET \\\n  --url 'https://api.bigcommerce.com/stores/{{ Store:key:sandbox:bigcommerce_id }}/v2/store' \\\n  --header 'Accept: application/json' \\\n  --header 'Content-Type: application/json' \\\n  --header 'X-Auth-Token: {{ Store:key:sandbox:token }}'\";s:10:\"autoImport\";b:0;s:17:\"incrementalExport\";b:0;s:11:\"assetSource\";s:6:\"/Store\";s:13:\"archiveFolder\";s:0:\"\";s:14:\"item-json-path\";s:0:\"\";s:9:\"hasHeader\";b:0;}",
+        "targetconfig": "a:12:{s:4:\"mode\";s:1:\"3\";s:9:\"itemClass\";s:5:\"store\";s:10:\"itemFolder\";s:6:\"/Store\";s:14:\"masterDocument\";s:0:\"\";s:19:\"optimizeInheritance\";s:1:\"0\";s:14:\"skipVersioning\";b:0;s:16:\"javascriptEngine\";s:3:\"php\";s:11:\"assetFolder\";s:6:\"/Store\";s:8:\"idPrefix\";s:0:\"\";s:13:\"categoryClass\";s:0:\"\";s:17:\"fieldnameProducts\";s:0:\"\";s:17:\"compatibilityMode\";s:1:\"0\";}"
     },
     "plugin_pim_fieldmapping": [
         {
             "dataportId": 6,
             "fieldName": "active_comparison_modules",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 41,
             "keyMapping": 0,
             "format": "a:3:{s:21:\"translateFromLanguage\";s:0:\"\";s:12:\"generateText\";b:0;s:14:\"writeProtected\";b:0;}",
@@ -22,7 +22,7 @@
         {
             "dataportId": 6,
             "fieldName": "address",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 9,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -33,7 +33,7 @@
         {
             "dataportId": 6,
             "fieldName": "admin_email",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 13,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -44,10 +44,10 @@
         {
             "dataportId": 6,
             "fieldName": "bigcommerce_id",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 2,
             "keyMapping": 0,
-            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
             "calculation": "",
             "brickName": "",
             "targetBrickField": null
@@ -55,7 +55,7 @@
         {
             "dataportId": 6,
             "fieldName": "checkout_type",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 45,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -66,7 +66,7 @@
         {
             "dataportId": 6,
             "fieldName": "control_panel_base_url",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 4,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -77,7 +77,7 @@
         {
             "dataportId": 6,
             "fieldName": "country",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 10,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -88,7 +88,7 @@
         {
             "dataportId": 6,
             "fieldName": "country_code",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 11,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -99,7 +99,7 @@
         {
             "dataportId": 6,
             "fieldName": "currency",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 25,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -110,7 +110,7 @@
         {
             "dataportId": 6,
             "fieldName": "currency_symbol",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 26,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -121,7 +121,7 @@
         {
             "dataportId": 6,
             "fieldName": "currency_symbol_location",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 30,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -132,7 +132,7 @@
         {
             "dataportId": 6,
             "fieldName": "date_format_display",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 21,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -143,7 +143,7 @@
         {
             "dataportId": 6,
             "fieldName": "date_format_export",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 22,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -154,8 +154,8 @@
         {
             "dataportId": 6,
             "fieldName": "date_format_extended_display",
-            "locale": "en",
-            "fieldNo": 23,
+            "locale": "",
+            "fieldNo": 46,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
             "calculation": "",
@@ -165,7 +165,7 @@
         {
             "dataportId": 6,
             "fieldName": "decimal_places",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 29,
             "keyMapping": 0,
             "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -176,7 +176,7 @@
         {
             "dataportId": 6,
             "fieldName": "decimal_separator",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 27,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -187,7 +187,7 @@
         {
             "dataportId": 6,
             "fieldName": "dimension_decimal_places",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 33,
             "keyMapping": 0,
             "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -198,7 +198,7 @@
         {
             "dataportId": 6,
             "fieldName": "dimension_decimal_token",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 34,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -209,7 +209,7 @@
         {
             "dataportId": 6,
             "fieldName": "dimension_thousands_token",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 35,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -220,7 +220,7 @@
         {
             "dataportId": 6,
             "fieldName": "dimension_units",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 32,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -231,7 +231,7 @@
         {
             "dataportId": 6,
             "fieldName": "domain",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 1,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -242,7 +242,7 @@
         {
             "dataportId": 6,
             "fieldName": "dst_correction",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 20,
             "keyMapping": 0,
             "format": "a:1:{s:14:\"writeProtected\";b:0;}",
@@ -253,7 +253,7 @@
         {
             "dataportId": 6,
             "fieldName": "dst_offset",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 19,
             "keyMapping": 0,
             "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -264,7 +264,7 @@
         {
             "dataportId": 6,
             "fieldName": "facebook_catalog_id",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 44,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -275,7 +275,7 @@
         {
             "dataportId": 6,
             "fieldName": "first_name",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 7,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -286,7 +286,7 @@
         {
             "dataportId": 6,
             "fieldName": "industry",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 38,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -297,7 +297,7 @@
         {
             "dataportId": 6,
             "fieldName": "is_price_entered_with_tax",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 40,
             "keyMapping": 0,
             "format": "a:1:{s:14:\"writeProtected\";b:0;}",
@@ -310,8 +310,8 @@
             "fieldName": "key",
             "locale": "",
             "fieldNo": 6,
-            "keyMapping": 0,
-            "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "keyMapping": 1,
+            "format": "a:6:{s:21:\"translateFromLanguage\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
             "calculation": "",
             "brickName": "",
             "targetBrickField": null
@@ -319,7 +319,7 @@
         {
             "dataportId": 6,
             "fieldName": "lang",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 24,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -330,7 +330,7 @@
         {
             "dataportId": 6,
             "fieldName": "last_name",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 8,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -341,7 +341,7 @@
         {
             "dataportId": 6,
             "fieldName": "logo_url",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 39,
             "keyMapping": 0,
             "format": "a:3:{s:9:\"overwrite\";b:1;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;}",
@@ -352,10 +352,10 @@
         {
             "dataportId": 6,
             "fieldName": "name",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 6,
-            "keyMapping": 1,
-            "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "keyMapping": 0,
+            "format": "a:6:{s:21:\"translateFromLanguage\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
             "calculation": "",
             "brickName": "",
             "targetBrickField": null
@@ -363,7 +363,7 @@
         {
             "dataportId": 6,
             "fieldName": "order_email",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 14,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -374,7 +374,7 @@
         {
             "dataportId": 6,
             "fieldName": "phone",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 12,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -385,7 +385,7 @@
         {
             "dataportId": 6,
             "fieldName": "plan_level",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 37,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -396,7 +396,7 @@
         {
             "dataportId": 6,
             "fieldName": "plan_name",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 36,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -407,7 +407,7 @@
         {
             "dataportId": 6,
             "fieldName": "raw_offset",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 18,
             "keyMapping": 0,
             "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -418,7 +418,7 @@
         {
             "dataportId": 6,
             "fieldName": "secure_url",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 3,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -429,7 +429,7 @@
         {
             "dataportId": 6,
             "fieldName": "sitewidehttps_enabled",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 43,
             "keyMapping": 0,
             "format": "a:1:{s:14:\"writeProtected\";b:0;}",
@@ -440,7 +440,7 @@
         {
             "dataportId": 6,
             "fieldName": "status",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 5,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -451,7 +451,7 @@
         {
             "dataportId": 6,
             "fieldName": "stencil_enabled",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 42,
             "keyMapping": 0,
             "format": "a:1:{s:14:\"writeProtected\";b:0;}",
@@ -462,7 +462,7 @@
         {
             "dataportId": 6,
             "fieldName": "thousands_separator",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 28,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -473,7 +473,7 @@
         {
             "dataportId": 6,
             "fieldName": "timezone_name",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 16,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
@@ -484,494 +484,10 @@
         {
             "dataportId": 6,
             "fieldName": "weight_units",
-            "locale": "en",
+            "locale": "",
             "fieldNo": 31,
             "keyMapping": 0,
             "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_active_comparison_modules",
-            "locale": "",
-            "fieldNo": 41,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_address",
-            "locale": "",
-            "fieldNo": 9,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_admin_email",
-            "locale": "",
-            "fieldNo": 13,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_control_panel_base_url",
-            "locale": "",
-            "fieldNo": 4,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_country",
-            "locale": "",
-            "fieldNo": 10,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_country_code",
-            "locale": "",
-            "fieldNo": 11,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_currency",
-            "locale": "",
-            "fieldNo": 25,
-            "keyMapping": 0,
-            "format": "a:6:{s:8:\"optimize\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_currency_symbol",
-            "locale": "",
-            "fieldNo": 26,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_currency_symbol_location",
-            "locale": "",
-            "fieldNo": 30,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_decimal_places",
-            "locale": "",
-            "fieldNo": 33,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_decimal_separator",
-            "locale": "",
-            "fieldNo": 27,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_dimension_decimal_places",
-            "locale": "",
-            "fieldNo": 33,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_dimension_decimal_token",
-            "locale": "",
-            "fieldNo": 34,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_dimension_thousands_token",
-            "locale": "",
-            "fieldNo": 35,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_dimension_units",
-            "locale": "",
-            "fieldNo": 32,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_domain",
-            "locale": "",
-            "fieldNo": 1,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_favicon_url",
-            "locale": "",
-            "fieldNo": 15,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_features_checkout_type",
-            "locale": "",
-            "fieldNo": 45,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_features_facebook_catalog_id",
-            "locale": "",
-            "fieldNo": 44,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_features_sitewidehttps_enabled",
-            "locale": "",
-            "fieldNo": 43,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_features_stencil_enabled",
-            "locale": "",
-            "fieldNo": 42,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_first_name",
-            "locale": "",
-            "fieldNo": 7,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_id",
-            "locale": "",
-            "fieldNo": 2,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_industry",
-            "locale": "",
-            "fieldNo": 38,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_is_price_entered_with_tax",
-            "locale": "",
-            "fieldNo": 40,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_language",
-            "locale": "",
-            "fieldNo": 24,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_last_name",
-            "locale": "",
-            "fieldNo": 8,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_logo_url",
-            "locale": "",
-            "fieldNo": 39,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_name",
-            "locale": "",
-            "fieldNo": 6,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_order_email",
-            "locale": "",
-            "fieldNo": 14,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_phone",
-            "locale": "",
-            "fieldNo": 12,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_plan_level",
-            "locale": "",
-            "fieldNo": 37,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_plan_name",
-            "locale": "",
-            "fieldNo": 36,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_secure_url",
-            "locale": "",
-            "fieldNo": 3,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_status",
-            "locale": "",
-            "fieldNo": 5,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_thousands_separator",
-            "locale": "",
-            "fieldNo": 28,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_data_format_extended_display",
-            "locale": "",
-            "fieldNo": 23,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_date_format_display",
-            "locale": "",
-            "fieldNo": 21,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_date_format_export",
-            "locale": "",
-            "fieldNo": 22,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_dst_correction",
-            "locale": "",
-            "fieldNo": 20,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_dst_offset",
-            "locale": "",
-            "fieldNo": 19,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_name",
-            "locale": "",
-            "fieldNo": 16,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_timezone_raw_offset",
-            "locale": "",
-            "fieldNo": 18,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
-            "calculation": "",
-            "brickName": "",
-            "targetBrickField": null
-        },
-        {
-            "dataportId": 6,
-            "fieldName": "__virtual_weight_units",
-            "locale": "",
-            "fieldNo": 31,
-            "keyMapping": 0,
-            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
             "calculation": "",
             "brickName": "",
             "targetBrickField": null
@@ -1241,6 +757,12 @@
             "fieldNo": 45,
             "name": "features_checkout_type",
             "priority": 43
+        },
+        {
+            "dataportId": 6,
+            "fieldNo": 46,
+            "name": "date_format_extended_display",
+            "priority": 44
         }
     ],
     "user": {

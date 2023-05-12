@@ -1,7 +1,7 @@
 {
     "id": "product",
     "description": "",
-    "modificationDate": 1682491014,
+    "modificationDate": 1683805822,
     "parentClass": "",
     "implementsInterfaces": "",
     "listingParentClass": "",
@@ -85,7 +85,7 @@
                                                 "tooltip": "The product ID of the BigCommerce system",
                                                 "mandatory": false,
                                                 "noteditable": false,
-                                                "index": false,
+                                                "index": true,
                                                 "locked": false,
                                                 "style": "",
                                                 "permissions": null,
@@ -259,7 +259,9 @@
                                                     "5",
                                                     "6",
                                                     "7",
-                                                    "8"
+                                                    "8",
+                                                    "11",
+                                                    "10"
                                                 ],
                                                 "integer": false,
                                                 "unsigned": true,
@@ -299,7 +301,8 @@
                                                     "5",
                                                     "6",
                                                     "7",
-                                                    "8"
+                                                    "8",
+                                                    "13"
                                                 ],
                                                 "integer": false,
                                                 "unsigned": true,
@@ -582,7 +585,7 @@
                                                         "classes": "ProductVariant"
                                                     }
                                                 ],
-                                                "pathFormatterClass": "",
+                                                "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                                 "width": "",
                                                 "assetUploadPath": "",
                                                 "objectsAllowed": true,
@@ -590,6 +593,39 @@
                                                 "assetTypes": [],
                                                 "documentsAllowed": false,
                                                 "documentTypes": []
+                                            },
+                                            {
+                                                "name": "variants",
+                                                "title": "Variants",
+                                                "tooltip": "",
+                                                "mandatory": false,
+                                                "noteditable": false,
+                                                "index": false,
+                                                "locked": false,
+                                                "style": "",
+                                                "permissions": null,
+                                                "datatype": "data",
+                                                "fieldtype": "manyToManyRelation",
+                                                "relationType": true,
+                                                "invisible": false,
+                                                "visibleGridView": false,
+                                                "visibleSearch": false,
+                                                "classes": [
+                                                    {
+                                                        "classes": "ProductVariant"
+                                                    }
+                                                ],
+                                                "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
+                                                "width": "",
+                                                "height": "",
+                                                "maxItems": null,
+                                                "assetUploadPath": "",
+                                                "objectsAllowed": true,
+                                                "assetsAllowed": false,
+                                                "assetTypes": [],
+                                                "documentsAllowed": false,
+                                                "documentTypes": [],
+                                                "enableTextSelection": false
                                             }
                                         ],
                                         "locked": false,
@@ -1225,7 +1261,7 @@
                                                 "classes": "Category"
                                             }
                                         ],
-                                        "pathFormatterClass": "",
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "height": "",
                                         "maxItems": null,
@@ -1256,7 +1292,7 @@
                                                 "classes": "Brand"
                                             }
                                         ],
-                                        "pathFormatterClass": "",
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "assetUploadPath": "",
                                         "objectsAllowed": true,
@@ -1286,7 +1322,7 @@
                                                 "classes": "Channel"
                                             }
                                         ],
-                                        "pathFormatterClass": "",
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "height": "",
                                         "maxItems": null,
@@ -1317,7 +1353,7 @@
                                                 "classes": "Product"
                                             }
                                         ],
-                                        "pathFormatterClass": "",
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "height": "",
                                         "maxItems": null,
@@ -1348,7 +1384,7 @@
                                                 "classes": "CustomField"
                                             }
                                         ],
-                                        "pathFormatterClass": "",
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "height": "",
                                         "maxItems": null,
@@ -1369,7 +1405,7 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
-                                        "fieldtype": "manyToOneRelation",
+                                        "fieldtype": "manyToManyObjectRelation",
                                         "relationType": true,
                                         "invisible": false,
                                         "visibleGridView": false,
@@ -1379,14 +1415,46 @@
                                                 "classes": "BulkPricingRule"
                                             }
                                         ],
-                                        "pathFormatterClass": "",
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
-                                        "assetUploadPath": "",
-                                        "objectsAllowed": true,
-                                        "assetsAllowed": false,
-                                        "assetTypes": [],
-                                        "documentsAllowed": false,
-                                        "documentTypes": []
+                                        "height": "",
+                                        "maxItems": null,
+                                        "visibleFields": [],
+                                        "allowToCreateNewObject": false,
+                                        "optimizedAdminLoading": false,
+                                        "enableTextSelection": false,
+                                        "visibleFieldDefinitions": []
+                                    },
+                                    {
+                                        "name": "options",
+                                        "title": "Options",
+                                        "tooltip": "",
+                                        "mandatory": false,
+                                        "noteditable": false,
+                                        "index": false,
+                                        "locked": false,
+                                        "style": "",
+                                        "permissions": null,
+                                        "datatype": "data",
+                                        "fieldtype": "manyToManyObjectRelation",
+                                        "relationType": true,
+                                        "invisible": false,
+                                        "visibleGridView": false,
+                                        "visibleSearch": false,
+                                        "classes": [
+                                            {
+                                                "classes": "Option"
+                                            }
+                                        ],
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
+                                        "width": "",
+                                        "height": "",
+                                        "maxItems": null,
+                                        "visibleFields": [],
+                                        "allowToCreateNewObject": false,
+                                        "optimizedAdminLoading": false,
+                                        "enableTextSelection": false,
+                                        "visibleFieldDefinitions": []
                                     }
                                 ],
                                 "locked": false,
@@ -2394,21 +2462,31 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
-                                        "fieldtype": "imageGallery",
-                                        "relationType": false,
+                                        "fieldtype": "manyToManyRelation",
+                                        "relationType": true,
                                         "invisible": false,
                                         "visibleGridView": false,
                                         "visibleSearch": false,
+                                        "classes": [
+                                            {
+                                                "classes": "ProductImage"
+                                            }
+                                        ],
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "height": "",
-                                        "uploadPath": "",
-                                        "ratioX": null,
-                                        "ratioY": null,
-                                        "predefinedDataTemplates": ""
+                                        "maxItems": null,
+                                        "assetUploadPath": "",
+                                        "objectsAllowed": true,
+                                        "assetsAllowed": false,
+                                        "assetTypes": [],
+                                        "documentsAllowed": false,
+                                        "documentTypes": [],
+                                        "enableTextSelection": false
                                     },
                                     {
-                                        "name": "video",
-                                        "title": "Video",
+                                        "name": "videos",
+                                        "title": "Videos",
                                         "tooltip": "",
                                         "mandatory": false,
                                         "noteditable": false,
@@ -2417,22 +2495,27 @@
                                         "style": "",
                                         "permissions": null,
                                         "datatype": "data",
-                                        "fieldtype": "video",
-                                        "relationType": false,
+                                        "fieldtype": "manyToManyRelation",
+                                        "relationType": true,
                                         "invisible": false,
                                         "visibleGridView": false,
                                         "visibleSearch": false,
+                                        "classes": [
+                                            {
+                                                "classes": "ProductVideo"
+                                            }
+                                        ],
+                                        "pathFormatterClass": "@DataDirectorSearchViewPathFormatter",
                                         "width": "",
                                         "height": "",
-                                        "allowedTypes": [
-                                            "youtube"
-                                        ],
-                                        "supportedTypes": [
-                                            "asset",
-                                            "youtube",
-                                            "vimeo",
-                                            "dailymotion"
-                                        ]
+                                        "maxItems": null,
+                                        "assetUploadPath": "",
+                                        "objectsAllowed": true,
+                                        "assetsAllowed": false,
+                                        "assetTypes": [],
+                                        "documentsAllowed": false,
+                                        "documentTypes": [],
+                                        "enableTextSelection": false
                                     }
                                 ],
                                 "locked": false,

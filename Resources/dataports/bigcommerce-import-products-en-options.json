@@ -1,0 +1,589 @@
+{
+    "plugin_pim_dataport": {
+        "id": 12,
+        "name": "Bigcommerce Import Products EN Options",
+        "description": "",
+        "sourcetype": "json",
+        "sourceconfig": "a:8:{s:6:\"fields\";a:31:{s:7:\"field_1\";a:1:{s:9:\"json-path\";s:2:\"id\";}s:7:\"field_2\";a:1:{s:9:\"json-path\";s:10:\"product_id\";}s:7:\"field_3\";a:1:{s:9:\"json-path\";s:4:\"name\";}s:7:\"field_4\";a:1:{s:9:\"json-path\";s:12:\"display_name\";}s:7:\"field_5\";a:1:{s:9:\"json-path\";s:4:\"type\";}s:7:\"field_6\";a:1:{s:9:\"json-path\";s:10:\"sort_order\";}s:7:\"field_7\";a:1:{s:9:\"json-path\";s:13:\"option_values\";}s:7:\"field_8\";a:1:{s:9:\"json-path\";s:20:\"config.default_value\";}s:7:\"field_9\";a:1:{s:9:\"json-path\";s:25:\"config.checked_by_default\";}s:8:\"field_10\";a:1:{s:9:\"json-path\";s:21:\"config.checkbox_label\";}s:8:\"field_11\";a:1:{s:9:\"json-path\";s:19:\"config.date_limited\";}s:8:\"field_12\";a:1:{s:9:\"json-path\";s:23:\"config. date_limit_mode\";}s:8:\"field_13\";a:1:{s:9:\"json-path\";s:26:\"config.date_earliest_value\";}s:8:\"field_14\";a:1:{s:9:\"json-path\";s:24:\"config.date_latest_value\";}s:8:\"field_15\";a:1:{s:9:\"json-path\";s:22:\"config.file_types_mode\";}s:8:\"field_16\";a:1:{s:9:\"json-path\";s:27:\"config.file_types_supported\";}s:8:\"field_17\";a:1:{s:9:\"json-path\";s:23:\"config.file_types_other\";}s:8:\"field_18\";a:1:{s:9:\"json-path\";s:20:\"config.file_max_size\";}s:8:\"field_19\";a:1:{s:9:\"json-path\";s:30:\"config.text_characters_limited\";}s:8:\"field_20\";a:1:{s:9:\"json-path\";s:22:\"config.text_min_length\";}s:8:\"field_21\";a:1:{s:9:\"json-path\";s:22:\"config.text_max_length\";}s:8:\"field_22\";a:1:{s:9:\"json-path\";s:25:\"config.text_lines_limited\";}s:8:\"field_23\";a:1:{s:9:\"json-path\";s:21:\"config.text_max_lines\";}s:8:\"field_24\";a:1:{s:9:\"json-path\";s:21:\"config.number_limited\";}s:8:\"field_25\";a:1:{s:9:\"json-path\";s:24:\"config.number_limit_mode\";}s:8:\"field_26\";a:1:{s:9:\"json-path\";s:26:\"config.number_lowest_value\";}s:8:\"field_27\";a:1:{s:9:\"json-path\";s:27:\"config.number_highest_value\";}s:8:\"field_28\";a:1:{s:9:\"json-path\";s:27:\"config.number_integers_only\";}s:8:\"field_29\";a:1:{s:9:\"json-path\";s:37:\"config.product_list_adjusts_inventory\";}s:8:\"field_30\";a:1:{s:9:\"json-path\";s:35:\"config.product_list_adjusts_pricing\";}s:8:\"field_31\";a:1:{s:9:\"json-path\";s:33:\"config.product_list_shipping_calc\";}}s:4:\"file\";s:286:\"curl --request GET --url 'https://api.bigcommerce.com/stores/{{ Store:key:sandbox:bigcommerce_id }}/v3/catalog/products/{{bigcommerceProductId}}/options' --header 'Accept: application/json' --header 'Content-Type: application/json' --header 'X-Auth-Token: {{ Store:key:sandbox:token }}'\";s:10:\"autoImport\";b:0;s:17:\"incrementalExport\";b:0;s:11:\"assetSource\";s:0:\"\";s:13:\"archiveFolder\";s:0:\"\";s:14:\"item-json-path\";s:4:\"data\";s:9:\"hasHeader\";b:0;}",
+        "targetconfig": "a:12:{s:4:\"mode\";s:1:\"3\";s:9:\"itemClass\";s:6:\"option\";s:10:\"itemFolder\";s:15:\"/ProductOptions\";s:14:\"masterDocument\";s:0:\"\";s:19:\"optimizeInheritance\";s:1:\"0\";s:14:\"skipVersioning\";b:0;s:16:\"javascriptEngine\";s:3:\"php\";s:11:\"assetFolder\";s:1:\"/\";s:8:\"idPrefix\";s:0:\"\";s:13:\"categoryClass\";s:0:\"\";s:17:\"fieldnameProducts\";s:0:\"\";s:17:\"compatibilityMode\";s:1:\"0\";}"
+    },
+    "plugin_pim_fieldmapping": [
+        {
+            "dataportId": 12,
+            "fieldName": "bigcommerce_id",
+            "locale": "en",
+            "fieldNo": 1,
+            "keyMapping": 1,
+            "format": "a:8:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "bigcommerce_product_id",
+            "locale": "en",
+            "fieldNo": 2,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "checkbox_label",
+            "locale": "en",
+            "fieldNo": 10,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "checked_by_default",
+            "locale": "en",
+            "fieldNo": 9,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "date_earliest_value",
+            "locale": "en",
+            "fieldNo": 13,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"dateFormat\";s:11:\"d.m.Y H:i:s\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "date_latest_value",
+            "locale": "en",
+            "fieldNo": 14,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"dateFormat\";s:11:\"d.m.Y H:i:s\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "date_limited",
+            "locale": "en",
+            "fieldNo": 11,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "date_limit_mode",
+            "locale": "en",
+            "fieldNo": 12,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "default_value",
+            "locale": "en",
+            "fieldNo": 8,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "display_name",
+            "locale": "en",
+            "fieldNo": 4,
+            "keyMapping": 0,
+            "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "file_max_size",
+            "locale": "en",
+            "fieldNo": 18,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "file_types_mode",
+            "locale": "en",
+            "fieldNo": 15,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "file_types_other",
+            "locale": "en",
+            "fieldNo": 17,
+            "keyMapping": 0,
+            "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "file_types_supported",
+            "locale": "en",
+            "fieldNo": 16,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "key",
+            "locale": "",
+            "fieldNo": 3,
+            "keyMapping": 0,
+            "format": "a:6:{s:21:\"translateFromLanguage\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "name",
+            "locale": "en",
+            "fieldNo": 3,
+            "keyMapping": 0,
+            "format": "a:2:{s:21:\"translateFromLanguage\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "number_highest_value",
+            "locale": "en",
+            "fieldNo": 27,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "number_integers_only",
+            "locale": "en",
+            "fieldNo": 28,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "number_limited",
+            "locale": "en",
+            "fieldNo": 24,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "number_limit_mode",
+            "locale": "en",
+            "fieldNo": 25,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "number_lowest_value",
+            "locale": "en",
+            "fieldNo": 26,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "option_type",
+            "locale": "en",
+            "fieldNo": 5,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "product",
+            "locale": "en",
+            "fieldNo": 2,
+            "keyMapping": 0,
+            "format": "a:6:{s:22:\"auto_create_references\";b:0;s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "if($params['value']) {\n  return 'Product:bigcommerce_id#en:'.$params['value'];\n}",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "product_list_adjusts_inventory",
+            "locale": "en",
+            "fieldNo": 29,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "product_list_adjusts_pricing",
+            "locale": "en",
+            "fieldNo": 30,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "product_list_shipping_calc",
+            "locale": "en",
+            "fieldNo": 31,
+            "keyMapping": 0,
+            "format": "a:2:{s:10:\"autoCreate\";b:0;s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "sort_order",
+            "locale": "en",
+            "fieldNo": 6,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "text_characters_limited",
+            "locale": "en",
+            "fieldNo": 19,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "text_lines_limited",
+            "locale": "en",
+            "fieldNo": 22,
+            "keyMapping": 0,
+            "format": "a:1:{s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "text_max_length",
+            "locale": "en",
+            "fieldNo": 21,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "text_max_lines",
+            "locale": "en",
+            "fieldNo": 23,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "text_min_length",
+            "locale": "en",
+            "fieldNo": 20,
+            "keyMapping": 0,
+            "format": "a:4:{s:16:\"decimalSeparator\";s:1:\".\";s:17:\"groupingSeparator\";s:1:\",\";s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "__result_callback",
+            "locale": "",
+            "fieldNo": null,
+            "keyMapping": 0,
+            "format": "a:6:{s:8:\"optimize\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "// Enter id of dataport to be executed\n$dataportId = {{ DEPENDENT DATAPORT ID }};\n\n// provide parameters to use in dynamic import resource or in callback functions of dependent dataport\n// leave empty to run dependent dataport with default import source\n$parameters = {{ DEPENDENT DATAPORT PARAMETERS }};\n\n\nif(($parameters || $params['lastCall']) && $dataportId) {\n    setRelations($params);\n    \n    $command = 'dd:complete '.$dataportId.' --rm'.($parameters?' -f --parameters=\"'.str_replace(['\"', '$', '`'], ['\\\"', '\\$', '\\`'], json_encode($parameters)).'\"':'');\n    $params['logger']->info($command);\n    if({{ DEPENDENT DATAPORT WAIT UNTIL FINISHED }}) {\n        $params['logger']->info('Executing command \"'.$command.'\"');\n        $output = \\Blackbit\\DataDirectorBundle\\lib\\Pim\\Cli::exec($command);\n        \n        if(preg_match('/X-Data-Director-Run:\\s*(.+)(\\n|$)/', $output, $dependentRunId)) {\n            $logFileObjectPath = $dataportId.'/'.trim($dependentRunId[1]);\n            $logStorage = \\Blackbit\\DataDirectorBundle\\lib\\Pim\\Helper::getApplicationLogStorage();\n            if($logStorage->fileExists($logFileObjectPath)) {\n                $dependentDataportLogs = $logStorage->read($logFileObjectPath);\n                $dependentDataportLogLines = explode(\"\\n\", $dependentDataportLogs);\n                $dependentDataportLogLines = array_map(function ($line) {\n                    return str_repeat(' ', 2).$line;\n                }, $dependentDataportLogLines);\n    \n                $params['logger']->info(\"Logs from dependent dataport run: \\n\".implode(\"\\n\", $dependentDataportLogLines));\n            }\n                \n            $responseDocument = \\Blackbit\\DataDirectorBundle\\Tools\\Installer::getCachePath().'/result_'.$dataportId.'_'.trim($dependentRunId[1]);\n            \n            if(file_exists($responseDocument)) {\n                return \\unserialize(\\file_get_contents($responseDocument));\n            }\n        }\n    } else {\n        $params['logger']->info('Queuing command \"'.$command.'\"');\n        $queue = new \\Blackbit\\DataDirectorBundle\\model\\Queue();\n        $queue->create(['command' => $command, 'triggered_by' => 'Result callback function of dataport '.$params['context']['dataportId']]);\n    }\n}\n\nfunction setRelations($params) {\n    $product = \\Pimcore\\Model\\DataObject\\Product::getByBigcommerce_id($params['rawItemData']['bigcommerce_product_id']['value'], 'en', 1);\n    $options = \\Pimcore\\Model\\DataObject\\Option::getByBigcommerce_product_id($params['rawItemData']['bigcommerce_product_id']['value'], 'en');\n    $product->setOptions($options->load(), 'en');\n    \n    $product->save();\n}",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "__virtual_DEPENDENT DATAPORT ID",
+            "locale": "",
+            "fieldNo": null,
+            "keyMapping": 0,
+            "format": "a:2:{s:8:\"optimize\";s:0:\"\";s:14:\"writeProtected\";b:0;}",
+            "calculation": "return '13';",
+            "brickName": "",
+            "targetBrickField": null
+        },
+        {
+            "dataportId": 12,
+            "fieldName": "__virtual_DEPENDENT DATAPORT PARAMETERS",
+            "locale": "",
+            "fieldNo": null,
+            "keyMapping": 0,
+            "format": "a:6:{s:8:\"optimize\";s:0:\"\";s:9:\"overwrite\";b:0;s:17:\"preventDuplicates\";b:0;s:14:\"writeProtected\";b:0;s:10:\"purgeitems\";b:0;s:20:\"auto_generate_fields\";b:0;}",
+            "calculation": "return [\n    'bigcommerceProductId' => $params['rawItemData']['bigcommerce_product_id']['value'],\n    'bigcommerceOptionId' => $params['rawItemData']['bigcommerce_id']['value'],\n    ];",
+            "brickName": "",
+            "targetBrickField": null
+        }
+    ],
+    "plugin_pim_rawitemField": [
+        {
+            "dataportId": 12,
+            "fieldNo": 1,
+            "name": "bigcommerce_id",
+            "priority": 0
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 2,
+            "name": "bigcommerce_product_id",
+            "priority": 1
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 3,
+            "name": "name",
+            "priority": 2
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 4,
+            "name": "display_name",
+            "priority": 3
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 5,
+            "name": "type",
+            "priority": 4
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 6,
+            "name": "sort_order",
+            "priority": 5
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 7,
+            "name": "option_values",
+            "priority": 6
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 8,
+            "name": "default_value",
+            "priority": 7
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 9,
+            "name": "checked_by_default",
+            "priority": 8
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 10,
+            "name": "checkbox_label",
+            "priority": 9
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 11,
+            "name": "date_limited",
+            "priority": 10
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 12,
+            "name": "date_limit_mode",
+            "priority": 11
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 13,
+            "name": "date_earliest_value",
+            "priority": 12
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 14,
+            "name": "date_latest_value",
+            "priority": 13
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 15,
+            "name": "file_types_mode",
+            "priority": 14
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 16,
+            "name": "file_types_supported",
+            "priority": 15
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 17,
+            "name": "file_types_other",
+            "priority": 16
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 18,
+            "name": "file_max_size",
+            "priority": 17
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 19,
+            "name": "text_characters_limited",
+            "priority": 18
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 20,
+            "name": "text_min_length",
+            "priority": 19
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 21,
+            "name": "text_max_length",
+            "priority": 20
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 22,
+            "name": "text_lines_limited",
+            "priority": 21
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 23,
+            "name": "text_max_lines",
+            "priority": 22
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 24,
+            "name": "number_limited",
+            "priority": 23
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 25,
+            "name": "number_limit_mode",
+            "priority": 24
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 26,
+            "name": "number_lowest_value",
+            "priority": 25
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 27,
+            "name": "number_highest_value",
+            "priority": 26
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 28,
+            "name": "number_integers_only",
+            "priority": 27
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 29,
+            "name": "product_list_adjusts_inventory",
+            "priority": 28
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 30,
+            "name": "product_list_adjusts_pricing",
+            "priority": 29
+        },
+        {
+            "dataportId": 12,
+            "fieldNo": 31,
+            "name": "product_list_shipping_calc",
+            "priority": 30
+        }
+    ],
+    "user": {
+        "id": 2,
+        "username": "admin"
+    }
+}
