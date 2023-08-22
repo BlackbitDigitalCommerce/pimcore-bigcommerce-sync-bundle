@@ -1,5 +1,0 @@
-blackbit_pimcore_bigcommerce_sync:
-    resource: "@BlackbitPimcoreBigcommerceSyncBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
